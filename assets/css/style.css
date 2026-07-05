@@ -272,7 +272,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 175px;
+  max-height: 210px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -440,6 +440,14 @@ main {
   margin-top: 10px;
   padding: 10px 16px;
   font-size: var(--fs-7);
+}
+
+.sidebar-social {
+  padding: 8px 0 0 7px;
+}
+
+.sidebar-social .social-list {
+  padding: 0;
 }
 
 
