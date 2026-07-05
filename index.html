@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Cairo:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,13 +30,18 @@
                 </div>
 
                 <button class="info_more-btn" data-sidebar-btn>
-                    <span>Show Contacts</span>
+                    <span i18n="show-contacts">Show Contacts</span>
                     <ion-icon name="chevron-down"></ion-icon>
                 </button>
 
             </div>
 
             <div class="sidebar-social">
+                <div class="lang-row">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="ar">AR</button>
+                </div>
                 <ul class="social-list">
                     <li class="social-item">
                         <a href="https://www.facebook.com/share/1HPWFoKNyn/" class="social-link">
@@ -58,8 +63,8 @@
 
             <a href="https://drive.google.com/file/d/1YgRJ8G1HJil8aosZ4tnTlBpCIfxi5zib/view?usp=sharing" target="_blank" class="cv-download-btn sidebar-cv-btn">
                 <ion-icon name="download-outline"></ion-icon>
-                <span>Download CV</span>
-            </a>
+                    <span i18n="download-cv">Download CV</span>
+                </a>
 
             <div class="sidebar-info_more">
 
@@ -72,7 +77,7 @@
                         </div>
 
                         <div class="contact-info">
-                            <p class="contact-title">Email</p>
+                            <p class="contact-title" i18n="email">Email</p>
                             <a href="mailto:benallouaziz1414@gmail.com" class="contact-link">benallouaziz1414@gmail.com</a>
                         </div>
                     </li>
@@ -82,7 +87,7 @@
                             <ion-icon name="phone-portrait-outline"></ion-icon>
                         </div>
                         <div class="contact-info">
-                            <p class="contact-title">Phone</p>
+                            <p class="contact-title" i18n="phone">Phone</p>
                             <a href="tel:+213558340669" class="contact-link">+213558340669</a>
                         </div>
                     </li>
@@ -91,7 +96,7 @@
                             <ion-icon name="calendar-outline"></ion-icon>
                         </div>
                         <div class="contact-info">
-                            <p class="contact-title">Birthday</p>
+                            <p class="contact-title" i18n="birthday">Birthday</p>
                             <time datetime="2004-09-23">Sept 23, 2004</time>
                         </div>
                     </li>
@@ -101,7 +106,7 @@
                             <ion-icon name="location-outline"></ion-icon>
                         </div>
                         <div class="contact-info">
-                            <p class="contact-title">Location</p>
+                            <p class="contact-title" i18n="location">Location</p>
                             <address>Sidi Ali Mellal, Tiaret, Algeria</address>
                         </div>
                     </li>
@@ -117,23 +122,23 @@
             <nav class="navbar">
                 <ul class="navbar-list">
                     <li class="navbar-item">
-                        <button class="navbar-link active" data-nav-link>About</button>
+                        <button class="navbar-link active" data-nav="about" data-nav-link i18n="nav-about">About</button>
                     </li>
 
                     <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Resume</button>
+                        <button class="navbar-link" data-nav="resume" data-nav-link i18n="nav-resume">Resume</button>
                     </li>
 
                     <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                        <button class="navbar-link" data-nav="portfolio" data-nav-link i18n="nav-portfolio">Portfolio</button>
                     </li>
 
                     <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Blog</button>
+                        <button class="navbar-link" data-nav="blog" data-nav-link i18n="nav-blog">Blog</button>
                     </li>
 
                     <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Contact</button>
+                        <button class="navbar-link" data-nav="contact" data-nav-link i18n="nav-contact">Contact</button>
                     </li>
                 </ul>
             </nav>
@@ -142,11 +147,11 @@
             <article class="about  active" data-page="about">
 
                 <header>
-                    <h2 class="h2 article-title">About me</h2>
+                    <h2 class="h2 article-title" i18n="about-title">About me</h2>
                 </header>
 
                 <section class="about-text">
-                    <p>
+                    <p i18n="about-p1">
                         I'm a passionate learner in the fields of networking and server security, with a growing
                         interest in web technologies.
                         I'm currently developing my skills through hands-on practice and continuous study, aiming to
@@ -154,7 +159,7 @@
                         systems communicate and stay secure.
                     </p>
 
-                    <p>
+                    <p i18n="about-p2">
                         My focus is on building a strong foundation in networking while exploring the practical aspects
                         of server management,
                         particularly in the context of web development. I enjoy discovering new tools and methods that
@@ -166,7 +171,7 @@
 
                 <section class="service">
 
-                    <h3 class="h3 service-title">What I'm doing</h3>
+                    <h3 class="h3 service-title" i18n="service-title">What I'm doing</h3>
 
                     <ul class="service-list">
 
@@ -177,9 +182,9 @@
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Web Development</h4>
+                                <h4 class="h4 service-item-title" i18n="service-web">Web Development</h4>
 
-                                <p class="service-item-text">
+                                <p class="service-item-text" i18n="service-web-desc">
                                     I'm learning to build simple and functional websites, with a focus on clean code and
                                     practical use cases.
                                 </p>
@@ -194,9 +199,9 @@
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Mobile Apps</h4>
+                                <h4 class="h4 service-item-title" i18n="service-mobile">Mobile Apps</h4>
 
-                                <p class="service-item-text">
+                                <p class="service-item-text" i18n="service-mobile-desc">
                                     Exploring the basics of mobile development, working on small projects to understand
                                     Android app structure and functionality.
                                 </p>
@@ -210,9 +215,9 @@
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Networking</h4>
+                                <h4 class="h4 service-item-title" i18n="service-net">Networking</h4>
 
-                                <p class="service-item-text">
+                                <p class="service-item-text" i18n="service-net-desc">
                                     Configuring and managing networks using routers, switches, and various protocols
                                     to ensure stable and efficient connectivity.
                                 </p>
@@ -226,9 +231,9 @@
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Network Security</h4>
+                                <h4 class="h4 service-item-title" i18n="service-sec">Network Security</h4>
 
-                                <p class="service-item-text">
+                                <p class="service-item-text" i18n="service-sec-desc">
                                     Assessing and securing network infrastructures through penetration testing,
                                     vulnerability analysis, and traffic monitoring.
                                 </p>
@@ -244,7 +249,7 @@
 
             <article class="resume" data-page="resume">
                 <header>
-                    <h2 class="h2 article-title">Resume</h2>
+                    <h2 class="h2 article-title" i18n="resume-title">Resume</h2>
                 </header>
 
                 <section class="timeline">
@@ -254,7 +259,7 @@
                             <ion-icon name="book-outline"></ion-icon>
                         </div>
 
-                        <h3 class="h3">Education</h3>
+                        <h3 class="h3" i18n="education">Education</h3>
                     </div>
 
                     <ol class="timeline-list">
@@ -351,7 +356,7 @@
                             <ion-icon name="book-outline"></ion-icon>
                         </div>
 
-                        <h3 class="h3">Experience</h3>
+                        <h3 class="h3" i18n="experience">Experience</h3>
                     </div>
 
                     <ol class="timeline-list">
@@ -445,7 +450,7 @@
                 </section>
 
                 <section class="skill">
-                    <h3 class="h3 skills-title">My Skills</h3>
+                    <h3 class="h3 skills-title" i18n="skills-title">My Skills</h3>
                     <ul class="skills-list content-card">
 
                         <li class="skills-item">
@@ -515,7 +520,7 @@
             <article class="portfolio" data-page="portfolio">
 
                 <header>
-                    <h2 class="h2 article-title">Portfolio</h2>
+                    <h2 class="h2 article-title" i18n="portfolio-title">Portfolio</h2>
                 </header>
 
                 <section class="projects">
@@ -795,7 +800,7 @@
             <article class="blog" data-page="blog">
 
                 <header>
-                    <h2 class="h2 article-title">Blog</h2>
+                    <h2 class="h2 article-title" i18n="blog-title">Blog</h2>
                 </header>
 
                 <section class="blog-posts">
@@ -936,7 +941,7 @@
 
                 <section class="contact-form">
 
-                    <h3 class="h3 form-title">Contact Form</h3>
+                    <h3 class="h3 form-title" i18n="contact-form">Contact Form</h3>
 
                     <form action="#" class="form" data-form>
 

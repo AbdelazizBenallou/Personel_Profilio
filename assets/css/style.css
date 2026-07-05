@@ -492,6 +492,55 @@ main {
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
+.lang-btn {
+  color: var(--light-gray-70);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-600);
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: var(--transition-1);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+.lang-btn:hover { color: var(--light-gray); }
+
+.lang-btn.active {
+  color: var(--orange-yellow-crayola);
+  background: var(--onyx);
+}
+
+.lang-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+html[lang="ar"] { font-family: 'Cairo', sans-serif; }
+
+html[lang="ar"] body { font-family: 'Cairo', sans-serif; }
+
+html[dir="rtl"] .sidebar-info { text-align: right; }
+
+html[dir="rtl"] .info-content .title { margin: 0; }
+
+html[dir="rtl"] .navbar-link { text-align: center; }
+
+html[dir="rtl"] .article-title::after { left: auto; right: 0; }
+
+html[dir="rtl"] .timeline-list { margin-left: 0; margin-right: 45px; }
+
+html[dir="rtl"] .timeline-item:not(:last-child)::before { left: auto; right: -30px; }
+
+html[dir="rtl"] .timeline-item::after { left: auto; right: -33px; }
+
+html[dir="rtl"] .contact-info { text-align: right; }
+
+
+
 
 
 
