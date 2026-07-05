@@ -516,7 +516,7 @@ main {
   display: flex;
   gap: 6px;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-top: 16px;
 }
 
 html[lang="ar"] { font-family: 'Cairo', sans-serif; }
