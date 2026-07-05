@@ -280,8 +280,8 @@ function applyLanguage(lang) {
   const t = translations[lang];
   if (!t) return;
 
-  document.querySelectorAll("[i18n]").forEach(el => {
-    const key = el.getAttribute("i18n");
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
     if (t[key]) {
       if (el.hasAttribute("placeholder")) {
         el.setAttribute("placeholder", t[key]);
