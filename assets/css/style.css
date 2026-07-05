@@ -527,6 +527,8 @@ html[dir="rtl"] .sidebar-info { text-align: right; }
 
 html[dir="rtl"] .info-content .title { margin: 0; }
 
+html[dir="rtl"] .navbar-list { justify-content: center; }
+
 html[dir="rtl"] .navbar-link { text-align: center; }
 
 html[dir="rtl"] .article-title::after { left: auto; right: 0; }
@@ -538,6 +540,20 @@ html[dir="rtl"] .timeline-item:not(:last-child)::before { left: auto; right: -30
 html[dir="rtl"] .timeline-item::after { left: auto; right: -33px; }
 
 html[dir="rtl"] .contact-info { text-align: right; }
+
+html[dir="rtl"] .contact-item { flex-direction: row-reverse; }
+
+html[dir="rtl"] .contacts-list { text-align: right; }
+
+html[dir="rtl"] .service-item { text-align: right; }
+
+html[dir="rtl"] .about-text { text-align: right; }
+
+html[dir="rtl"] .skill .title-wrapper { justify-content: flex-end; }
+
+html[dir="rtl"] .filter-list { padding-left: 0; padding-right: 5px; }
+
+html[dir="rtl"] .sidebar-social .social-list { justify-content: center; }
 
 
 

@@ -29,7 +29,7 @@ select.addEventListener("click", function () { elementToggleFunc(this); });
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
+    let selectedValue = this.dataset.value || this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
     elementToggleFunc(select);
     filterFunc(selectedValue);
@@ -63,7 +63,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 
   filterBtn[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
+    let selectedValue = this.dataset.value || this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
 
@@ -157,7 +157,20 @@ const translations = {
     "email": "Email",
     "phone": "Phone",
     "birthday": "Birthday",
-    "location": "Location"
+    "location": "Location",
+    "filter-all": "All",
+    "filter-web-design": "Web design",
+    "filter-apps": "Applications",
+    "filter-web-dev": "Web development",
+    "filter-networks": "Networks Labs",
+    "filter-project": "Project",
+    "select-category": "Select category",
+    "skill-flutter": "Mobile App Development (Flutter)",
+    "skill-networks": "Computer Networks & Configuration",
+    "skill-linux": "Linux Systems & Server Administration",
+    "skill-pentest": "Wireless Network Penetration Testing",
+    "skill-sys-design": "Information Systems Design",
+    "skill-store": "Basic Store & Inventory Management"
   },
   fr: {
     "nav-about": "À propos",
@@ -194,7 +207,20 @@ const translations = {
     "email": "Email",
     "phone": "Téléphone",
     "birthday": "Anniversaire",
-    "location": "Localisation"
+    "location": "Localisation",
+    "filter-all": "Tout",
+    "filter-web-design": "Design web",
+    "filter-apps": "Applications",
+    "filter-web-dev": "Développement web",
+    "filter-networks": "Labos Réseaux",
+    "filter-project": "Projet",
+    "select-category": "Sélectionner catégorie",
+    "skill-flutter": "Développement Mobile (Flutter)",
+    "skill-networks": "Réseaux & Configuration",
+    "skill-linux": "Administration Linux & Serveurs",
+    "skill-pentest": "Test de Pénétration Réseau",
+    "skill-sys-design": "Conception de Systèmes d'Information",
+    "skill-store": "Gestion de Base de Stock & Magasin"
   },
   ar: {
     "nav-about": "عن",
@@ -231,7 +257,20 @@ const translations = {
     "email": "البريد",
     "phone": "الهاتف",
     "birthday": "تاريخ الميلاد",
-    "location": "الموقع"
+    "location": "الموقع",
+    "filter-all": "الكل",
+    "filter-web-design": "تصميم ويب",
+    "filter-apps": "تطبيقات",
+    "filter-web-dev": "تطوير ويب",
+    "filter-networks": "مختبرات الشبكات",
+    "filter-project": "مشروع",
+    "select-category": "اختر الفئة",
+    "skill-flutter": "تطوير تطبيقات الجوال (Flutter)",
+    "skill-networks": "الشبكات والتكوين",
+    "skill-linux": "إدارة أنظمة لينكس والخوادم",
+    "skill-pentest": "اختبار اختراق الشبكات اللاسلكية",
+    "skill-sys-design": "تصميم نظم المعلومات",
+    "skill-store": "إدارة المخازن والمخزون"
   }
 };
 
@@ -244,7 +283,11 @@ function applyLanguage(lang) {
   document.querySelectorAll("[i18n]").forEach(el => {
     const key = el.getAttribute("i18n");
     if (t[key]) {
-      el.textContent = t[key];
+      if (el.hasAttribute("placeholder")) {
+        el.setAttribute("placeholder", t[key]);
+      } else {
+        el.textContent = t[key];
+      }
     }
   });
 

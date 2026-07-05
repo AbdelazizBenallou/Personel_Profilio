@@ -456,7 +456,7 @@
 
                         <li class="skills-item">
                             <div class="title-wrapper">
-                                <h5 class="h5">Mobile App Development (Flutter)</h5>
+                                <h5 class="h5" i18n="skill-flutter">Mobile App Development (Flutter)</h5>
                                 <data value="70">70%</data>
                             </div>
                             <div class="skill-progress-bg">
@@ -466,7 +466,7 @@
 
                         <li class="skills-item">
                             <div class="title-wrapper">
-                                <h5 class="h5">Computer Networks & Configuration</h5>
+                                <h5 class="h5" i18n="skill-networks">Computer Networks & Configuration</h5>
                                 <data value="80">80%</data>
                             </div>
                             <div class="skill-progress-bg">
@@ -476,7 +476,7 @@
 
                         <li class="skills-item">
                             <div class="title-wrapper">
-                                <h5 class="h5">Linux Systems & Server Administration</h5>
+                                <h5 class="h5" i18n="skill-linux">Linux Systems & Server Administration</h5>
                                 <data value="75">75%</data>
                             </div>
                             <div class="skill-progress-bg">
@@ -486,7 +486,7 @@
 
                         <li class="skills-item">
                             <div class="title-wrapper">
-                                <h5 class="h5">Wireless Network Penetration Testing</h5>
+                                <h5 class="h5" i18n="skill-pentest">Wireless Network Penetration Testing</h5>
                                 <data value="60">60%</data>
                             </div>
                             <div class="skill-progress-bg">
@@ -496,7 +496,7 @@
 
                         <li class="skills-item">
                             <div class="title-wrapper">
-                                <h5 class="h5">Information Systems Design</h5>
+                                <h5 class="h5" i18n="skill-sys-design">Information Systems Design</h5>
                                 <data value="55">55%</data>
                             </div>
                             <div class="skill-progress-bg">
@@ -506,7 +506,7 @@
 
                         <li class="skills-item">
                             <div class="title-wrapper">
-                                <h5 class="h5">Basic Store & Inventory Management</h5>
+                                <h5 class="h5" i18n="skill-store">Basic Store & Inventory Management</h5>
                                 <data value="50">50%</data>
                             </div>
                             <div class="skill-progress-bg">
@@ -529,27 +529,27 @@
                     <ul class="filter-list">
 
                         <li class="filter-item">
-                            <button class="active" data-filter-btn>All</button>
+                            <button class="active" data-filter-btn data-value="all" i18n="filter-all">All</button>
                         </li>
 
                         <li class="filter-item">
-                            <button data-filter-btn>Web design</button>
+                            <button data-filter-btn data-value="web design" i18n="filter-web-design">Web design</button>
                         </li>
 
                         <li class="filter-item">
-                            <button data-filter-btn>Applications</button>
+                            <button data-filter-btn data-value="applications" i18n="filter-apps">Applications</button>
                         </li>
 
                         <li class="filter-item">
-                            <button data-filter-btn>Web development</button>
+                            <button data-filter-btn data-value="web development" i18n="filter-web-dev">Web development</button>
                         </li>
 
                         <li class="filter-item">
-                            <button data-filter-btn>Networks Labs</button>
+                            <button data-filter-btn data-value="networks labs" i18n="filter-networks">Networks Labs</button>
                         </li>
 
                         <li class="filter-item">
-                            <button data-filter-btn>Project</button>
+                            <button data-filter-btn data-value="project" i18n="filter-project">Project</button>
                         </li>
 
                     </ul>
@@ -558,7 +558,7 @@
 
                         <button class="filter-select" data-select>
 
-                            <div class="select-value" data-select-value>Select category</div>
+                            <div class="select-value" data-select-value i18n="select-category">Select category</div>
 
                             <div class="select-icon">
                                 <ion-icon name="chevron-down"></ion-icon>
@@ -569,27 +569,27 @@
                         <ul class="select-list">
 
                             <li class="select-item">
-                                <button data-select-item>All</button>
+                                <button data-select-item data-value="all" i18n="filter-all">All</button>
                             </li>
 
                             <li class="select-item">
-                                <button data-select-item>Web design</button>
+                                <button data-select-item data-value="web design" i18n="filter-web-design">Web design</button>
                             </li>
 
                             <li class="select-item">
-                                <button data-select-item>Applications</button>
+                                <button data-select-item data-value="applications" i18n="filter-apps">Applications</button>
                             </li>
 
                             <li class="select-item">
-                                <button data-select-item>Web development</button>
+                                <button data-select-item data-value="web development" i18n="filter-web-dev">Web development</button>
                             </li>
 
                             <li class="select-item">
-                                <button data-select-item>Networks Labs</button>
+                                <button data-select-item data-value="networks labs" i18n="filter-networks">Networks Labs</button>
                             </li>
 
                             <li class="select-item">
-                                <button data-select-item>Project</button>
+                                <button data-select-item data-value="project" i18n="filter-project">Project</button>
                             </li>
 
                         </ul>
@@ -948,18 +948,18 @@
 
                         <div class="input-wrapper">
                             <input type="text" name="fullname" class="form-input" placeholder="Full name" required
-                                data-form-input>
+                                data-form-input i18n="form-name">
 
                             <input type="email" name="email" class="form-input" placeholder="Email address" required
-                                data-form-input>
+                                data-form-input i18n="form-email">
                         </div>
 
                         <textarea name="message" class="form-input" placeholder="Your Message" required
-                            data-form-input></textarea>
+                            data-form-input i18n="form-message"></textarea>
 
                         <button class="form-btn" type="submit" disabled data-form-btn>
                             <ion-icon name="paper-plane"></ion-icon>
-                            <span>Send Message</span>
+                            <span i18n="form-send">Send Message</span>
                         </button>
                     </form>
                 </section>
