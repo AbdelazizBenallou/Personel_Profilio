@@ -448,6 +448,7 @@ main {
 
 .sidebar-social .social-list {
   padding: 0;
+  justify-content: center;
 }
 
 
