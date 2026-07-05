@@ -272,7 +272,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 155px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -285,6 +285,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .avatar-box {
@@ -1319,7 +1320,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    max-height: 180px;
+    max-height: 230px;
     margin-bottom: 30px;
   }
 
